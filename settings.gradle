@@ -12,4 +12,4 @@ pluginManagement {
 		}
 	}
 }
-rootProject.name = 'sample-hello-3'
+rootProject.name = 'sample-hello'
