@@ -14,7 +14,7 @@ public class CalculateController
 	@RequestMapping("/calculate")
 	public String form(@ModelAttribute CalculateForm calculateForm, Model model)
 	{
-		model.addAttribute("calculateForm", new CalculateForm());
+		model.addAttribute("calculateForm", calculateForm);
 		return "index";
 	}
 
