@@ -5,6 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.example.demo.model.CalculateForm;
+import com.example.demo.model.HelloModel;
 
 @Controller
 public class HelloController
