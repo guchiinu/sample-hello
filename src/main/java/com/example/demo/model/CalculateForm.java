@@ -1,6 +1,6 @@
 package com.example.demo.model;
 
-public class Form
+public class CalculateForm
 {
 	private int num1 = 0;
 	private int num2 = 0;

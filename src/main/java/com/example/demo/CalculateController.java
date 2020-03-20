@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.example.demo.model.Form;
+import com.example.demo.model.CalculateForm;
 
 @Controller
 public class CalculateController
@@ -14,15 +14,15 @@ public class CalculateController
 	@RequestMapping("/calculate")
 	public String form(Model model)
 	{
-		model.addAttribute("form", new Form());
+		model.addAttribute("calculateForm", new CalculateForm());
 		return "index";
 	}
 
 	@RequestMapping(value = "/result", method = RequestMethod.POST)
-	public String result(@ModelAttribute Form form, Model model)
+	public String result(@ModelAttribute CalculateForm calclulateForm, Model model)
 	{
-		form.sumTotal();
-		model.addAttribute("form", form);
+		calculateForm.sumTotal();
+		model.addAttribute("calculateForm", calculateForm);
 		return "result";
 	}
 }
