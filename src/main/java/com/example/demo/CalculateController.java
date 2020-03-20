@@ -22,7 +22,7 @@ public class CalculateController
 	public String result(@ModelAttribute CalculateForm calclulateForm, Model model)
 	{
 		calculateForm.sumTotal();
-		model.addAttribute("calculateForm", calculateForm);
+		model.addAttribute("calculateForm", new CalculateForm());
 		return "result";
 	}
 }
