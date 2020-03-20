@@ -19,10 +19,10 @@ public class CalculateController
 	}
 
 	@RequestMapping(value = "/result", method = RequestMethod.POST)
-	public String result(@ModelAttribute CalculateForm calclulateForm, Model model)
+	public String result(@ModelAttribute CalculateForm calculateForm, Model model)
 	{
 		calculateForm.sumTotal();
-		model.addAttribute("calculateForm", new CalculateForm());
+		model.addAttribute("calculateForm", calculateForm);
 		return "result";
 	}
 }
