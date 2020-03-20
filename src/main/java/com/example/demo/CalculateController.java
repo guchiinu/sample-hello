@@ -9,17 +9,20 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.example.demo.model.Form;
 
 @Controller
-public class CalculateController {
+public class CalculateController
+{
 	@RequestMapping("/calculate")
-	public String form(Model model) {
+	public String form(Model model)
+	{
 		model.addAttribute("form", new Form());
 		return "index";
 	}
-	
-	@RequestMapping(value="/result", method = RequestMethod.POST)
-	public String result(@ModelAttribute Form form, Model model) {
+
+	@RequestMapping(value = "/result", method = RequestMethod.POST)
+	public String result(@ModelAttribute Form form, Model model)
+	{
 		form.sumTotal();
 		model.addAttribute("form", form);
-			return "result";
+		return "result";
 	}
 }
