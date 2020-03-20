@@ -2,14 +2,14 @@ package com.example.demo.model;
 
 public class HelloModel
 {
-    private string strHello = "Hello World!";
+    private String strHello = "Hello World!";
     
-    public string getHello()
+    public String getHello()
     {
         return this.strHello;
     }
     
-    public void setHello(string str)
+    public void setHello(String str)
     {
         this.strHello = str;
     }

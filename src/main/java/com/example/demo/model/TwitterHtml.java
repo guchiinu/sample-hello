@@ -2,6 +2,6 @@ package com.example.demo.model;
 
 public class TwitterHtml
 {
-    private string name;
-    private string url;
+    private String name;
+    private String url;
 }
