@@ -12,9 +12,9 @@ import com.example.demo.model.CalculateForm;
 public class CalculateController
 {
 	@RequestMapping("/calculate")
-	public String form(@ModelAttribute CalculateForm calculateForm, Model model)
+	public String form(Model model)
 	{
-		model.addAttribute("calculateForm", calculateForm);
+		model.addAttribute("calculateForm", new calculateForm);
 		return "index";
 	}
 
